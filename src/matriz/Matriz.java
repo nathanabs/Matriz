@@ -34,6 +34,13 @@ public class Matriz {
                 matriz[i][j] = Integer.parseInt(sc.nextLine());
             }
         }
+        
+        for (int i = 0; i < tamColuna; i++) {
+            for (int j = 0; j < tamLinhas; j++) {
+                System.out.println(matriz[i][j]+" ");
+            }
+            System.out.println("");
+        }
         System.out.println("Digite um número da matriz: ");
         numero = Integer.parseInt(sc.nextLine());
         
@@ -48,10 +55,10 @@ public class Matriz {
                 //Numero abaixo
                 if((i+1) < tamColuna)
                     System.out.println("Abaixo: "+matriz[i+1][j]);
-                //Numero esquerda
+                //Numero a esquerda
                 if ((j-1) >= 0) 
                     System.out.println("Esquerda: "+ matriz[i][j-1]);
-                //Numero direita
+                //Numero a direita
                 if((j+1) < tamLinhas)
                     System.out.println("Direita: "+ matriz[i][j+1]);
             }
