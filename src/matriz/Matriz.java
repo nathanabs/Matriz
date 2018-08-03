@@ -37,7 +37,7 @@ public class Matriz {
         
         for (int i = 0; i < tamColuna; i++) {
             for (int j = 0; j < tamLinhas; j++) {
-                System.out.println(matriz[i][j]+" ");
+                System.out.print(matriz[i][j]+" ");
             }
             System.out.println("");
         }
